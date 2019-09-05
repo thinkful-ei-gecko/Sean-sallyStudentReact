@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sally Student, Resume</title>
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+  </head>
+  <body>
+      <div id="application-root"></div>
+      <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+      <script
+        src="https://unpkg.com/react@16/umd/react.development.js"> </script>
+      <script  
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+      <script type="text/babel">
+
+        const appRoot = document.querySelector('#application-root');
+
+       function App(props) {
+           return (
+            <div>
+            <header>
+                 <h1> Sally Student </h1>
+            </header>
+            <main>
+            <section>
+                <h2>Objective</h2>
+		        <p>	Professional software devloper looking to expand their knowledge base</p>
+            </section>
+            <section>
+		        <h2> Skills </h2>
+			        <ul>
+				        <li> Java 	</li>
+			  	        <li> C++	</li>
+			  	        <li> HTML	</li>
+			  	        <li> Windows, Linux, Mac OS X </li>
+			        </ul>
+            </section>
+            <section>
+            <h2> Work History </h2>
+                <ul>
+                <li><h3> Net Systems, Software Developer <i>(May 2018 - May 2019)</i> </h3>
+                <p> Developed back-end applications using Java </p></li>
+                <li><h3> OVI Inc, Intern <i>(May 2017 - May 2018)</i></h3>
+                <p> Provided support to the software devlopment teams </p></li>
+                </ul>
+            </section>
+            <section>
+	  	        <h2> Contact Info </h2>
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt = "Sally Student" width="265" height = "400"/>
+                <p> Sally Student <br/>
+		            Facebook: <a href="https://www.facebook.com/sallystudent">Sally Student </a><br/>
+                    Email: <a href="mailto:sallystudent@gmail.com">Sally Student</a><br/>
+                    Phone: 703-555-5555
+                </p>
+            </section>
+             </main>
+             </div>
+           );
+       }
+
+       ReactDOM.render(
+           <App />,
+           appRoot
+       );
+       </script>
+  </body>
+</html>
